@@ -1,0 +1,16 @@
+services:
+  cads_api:
+    labels:
+      com.microsoft.visual-studio.project-name: "Cads.Api"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5565
+      - AWS__ServiceURL=http://cadsapi-localstack-emulator:4566
+      - Mongo__DatabaseUri=mongodb://cadsapi_mongodb:27017
+    ports:
+      - "5565"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
