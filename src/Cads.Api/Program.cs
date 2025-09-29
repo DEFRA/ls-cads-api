@@ -1,7 +1,6 @@
 using Cads.Api.Setup;
 using Cads.Api.Utils;
 using Cads.Infrastructure.Telemetry.Logging;
-using LsCadsApi.Utils;
 using Serilog;
 using System.Diagnostics.CodeAnalysis;
 
