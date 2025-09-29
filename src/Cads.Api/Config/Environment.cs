@@ -1,4 +1,4 @@
-namespace LsCadsApi.Config;
+namespace Cads.Api.Config;
 
 public static class Environment
 {

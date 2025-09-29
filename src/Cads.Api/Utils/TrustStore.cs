@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace LsCadsApi.Utils;
+namespace Cads.Api.Utils;
 
 [ExcludeFromCodeCoverage]
 public static class TrustStore
